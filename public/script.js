@@ -1,6 +1,3 @@
-import axios from "axios";
-import { response } from "express";
-
 document.addEventListener("DOMContentLoaded",function(){
     const chatMessages = document.getElementById("chat-messages");
 
@@ -55,7 +52,7 @@ document.addEventListener("DOMContentLoaded",function(){
         messageDiv.className = `message ${sender}`;
         messageDiv.innerHTML = `
             <div class="message-content">
-                <p>${formatContent(content)}</p>
+                ${content}
             </div>
         `;
         chatMessages.appendChild(messageDiv);
