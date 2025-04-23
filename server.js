@@ -56,3 +56,8 @@ app.post('/api/chat', async (req, res) => {
         console.error("AI接口调用失败：",error);
     }
 });
+
+app.listen(port,() => {
+    console.log(`服务器正在监听端口 ${port}`);
+    console.log(`地址： http://localhost:${port}`);
+});
