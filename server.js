@@ -5,11 +5,10 @@ import { fileURLToPath } from 'url'; // 导入 url 模块的 fileURLToPath 函�
 import { dirname, join } from 'path'; // 导入 path 模块的 dirname 和 join 函数，用于处理文件和目录路径
 
 console.log("========================服务器初始化开始=========================");
-
 const __filename = fileURLToPath(import.meta.url);
 const _dirname = dirname(__filename);
 
-console.log(`当前路径:${_dirname}`);
+console.log(`当前路径: ${_dirname}`);
 
 const app = express();
 
